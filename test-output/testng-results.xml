@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="5" total="6" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-12T15:44:19 EET" name="Default suite" finished-at="2025-08-12T15:44:41 EET" duration-ms="22255">
+    <groups>
+    </groups>
+    <test started-at="2025-08-12T15:44:19 EET" name="Default test" finished-at="2025-08-12T15:44:41 EET" duration-ms="22255">
+      <class name="Package.MySetUp">
+        <test-method is-config="true" signature="TestCase()[pri:0, instance:Package.MySetUp@36b0fcd5]" started-at="2025-08-12T15:44:19 EET" name="TestCase" finished-at="2025-08-12T15:44:33 EET" duration-ms="14435" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase -->
+        <test-method signature="checkHomeLink()[pri:6, instance:Package.MySetUp@36b0fcd5]" started-at="2025-08-12T15:44:33 EET" name="checkHomeLink" finished-at="2025-08-12T15:44:41 EET" duration-ms="7777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHomeLink -->
+      </class> <!-- Package.MySetUp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
