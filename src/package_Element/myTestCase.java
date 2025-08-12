@@ -1,9 +1,6 @@
-package packageElement;
+package package_Element;
 
 import java.time.Duration;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.NoSuchElementException;
 import java.util.Random;
 import java.util.Set;
 
@@ -19,7 +16,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class MySetUp {
+public class myTestCase {
 	WebDriver driver = new ChromeDriver();
 	String theURL = "https://demoqa.com/profile";
 	Random rand = new Random();
@@ -32,7 +29,7 @@ public class MySetUp {
 
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1, enabled = true)
 	public void Element() {
 
 		driver.navigate().to("https://demoqa.com/text-box");
@@ -54,7 +51,7 @@ public class MySetUp {
 
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2, enabled = true)
 	public void CheckBox() {
 		driver.navigate().to("https://demoqa.com/checkbox");
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -65,7 +62,7 @@ public class MySetUp {
 
 	}
 
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3, enabled = true)
 	public void RadioButton() {
 	    driver.navigate().to("https://demoqa.com/radio-button");
 	    JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -85,9 +82,12 @@ public class MySetUp {
 	    Assert.assertEquals(actualText, selectedOption,
 	            "Displayed text does not match the selected option!");
 	}
-	@Test(priority = 4,enabled = false)
+	@Test(priority = 4,enabled = true)
 	public void EditTableNamesAndEmail() {
 	    driver.navigate().to("https://demoqa.com/webtables");
+	    
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    js.executeScript("window.scrollTo(0,300)");
 	    
 
 	    WebElement editButton = driver.findElement(By.xpath("//span[@title='Edit'][1]"));
@@ -111,7 +111,7 @@ public class MySetUp {
 
 	    driver.findElement(By.id("submit")).click();
 	}
-	@Test(priority = 5,enabled = false)
+	@Test(priority = 5,enabled = true)
 	public void TestAllClickTypes() {
 	    driver.navigate().to("https://demoqa.com/buttons");
 	    
@@ -144,7 +144,7 @@ public class MySetUp {
 	    System.out.println("Single Click verified");
 	}
 	
-	 @Test(priority = 6)
+	 @Test(priority = 6,enabled = true)
 	    public void checkHomeLink() {
 	        driver.navigate().to("https://demoqa.com/links");
 	        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -169,13 +169,6 @@ public class MySetUp {
 	        driver.close();
 	        driver.switchTo().window(originalWindow);
 	    }
-
-	        
-	    
-	    
-
-		
-
 
 
 

@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Package.MySetUp">
+      <class name="package_Element.myTestCase">
         <methods>
-          <include name="checkApiLinksResponses"/>
+          <include name="TestAllClickTypes"/>
           <include name="TestCase"/>
+          <include name="checkHomeLink"/>
         </methods>
-      </class> <!-- Package.MySetUp -->
+      </class> <!-- package_Element.myTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
